@@ -1,0 +1,72 @@
+# Logs
+logs
+*.log
+
+# Virtual environments
+.venv
+venv
+env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Result analysis files - exclude non-code files
+*.csv
+*.xlsx
+*.docx
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.json
+*.txt
+*.zip
+*.rar
+
+# Data directories
+data/
+results/
+analysis/
+output/
+logs/
+reports/
+*_results/
+*_output/
+*_analysis/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Build outputs
+dist
+build
+
+# Local files
+.env
+.env.local
+.env.*.local
+
+# Keep code files
+!*.py
+!*.ts
+!*.tsx
+!*.js
+!*.jsx
+!*.html
+!*.css
+!*.scss
+!*.less
+!*.md
+!README.md
+!LICENSE

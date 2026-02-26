@@ -1,0 +1,57 @@
+# 排除他人代码
+slidedeconstruct-ai-main/
+
+# 排除无关目录
+apidownload/
+251104_caj_to_pdf_to_txt/
+000zip/
+260224/
+temp_repo/
+goujian_rename&newfloder/
+others/
+
+# 排除违规文件类型
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.html
+*.htm
+*.csv
+*.xlsx
+*.docx
+*.pptx
+*.txt
+*.md
+*.markdown
+
+# 排除系统/缓存文件
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+__pycache__/
+*.pyc
+
+# 排除依赖/环境文件
+node_modules/
+.venv/
+env/
+*.env
+*.env.local
+*.env.*
+package-lock.json
+yarn.lock
+
+# 排除编辑器文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
