@@ -1,57 +1,33 @@
-# 排除他人代码
-slidedeconstruct-ai-main/
+# Binary / driver files
+*.exe
+*.zip
+*.tar.gz
+*.msi
+*.dmg
 
-# 排除无关目录
-apidownload/
-251104_caj_to_pdf_to_txt/
-000zip/
-260224/
-temp_repo/
-goujian_rename&newfloder/
-others/
-
-# 排除违规文件类型
-*.pdf
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.html
-*.htm
-*.csv
-*.xlsx
-*.docx
-*.pptx
-*.txt
-*.md
-*.markdown
-
-# 排除系统/缓存文件
-.DS_Store
-Thumbs.db
-*.log
-*.tmp
-*.swp
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+dist/
+build/
 
-# 排除依赖/环境文件
-node_modules/
-.venv/
-env/
-*.env
-*.env.local
-*.env.*
-package-lock.json
-yarn.lock
-
-# 排除编辑器文件
+# IDE
 .idea/
 .vscode/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+.venv/
+env/
+venv/
