@@ -1,3 +1,7 @@
+<!-- licensing-notice -->
+> [!NOTE]
+> This repository includes third-party material. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for attribution, license scope and lawful-use requirements.
+
 # Academic Tools
 
 A collection of Python automation and analysis tools for academic research.
