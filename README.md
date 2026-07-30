@@ -10,11 +10,11 @@ A collection of Python automation and analysis tools for academic research.
 
 | Directory | Description |
 |-----------|-------------|
-| cnki_downloader/ | CNKI (??) paper batch downloader with image recognition |
+| cnki_downloader/ | CNKI (中国知网) paper batch downloader with image recognition |
 | classification/ | Policy text statistical analysis & environmental regulation classifier |
-| ile_utils/ | Batch file rename, merge, split, and text processing |
+| file_utils/ | Batch file rename, merge, split, and text processing |
 | pdf_utils/ | PDF batch renaming tools |
-| 	ools/ | Auto-clicker and miscellaneous utilities |
+| tools/ | Auto-clicker and miscellaneous utilities |
 | models/ | Application framework demo template |
 
 ## Requirements
