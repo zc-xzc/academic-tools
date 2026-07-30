@@ -1,0 +1,15 @@
+{
+  "archive_name": "<主题>",
+  "created_at": "YYYY-MM-DD",
+  "files": [
+    {
+      "name": "ARCHIVE.md",
+      "purpose": "完整归档正文"
+    },
+    {
+      "name": "RESTORE.md",
+      "purpose": "新对话恢复指令"
+    }
+  ],
+  "status": "完成"
+}
