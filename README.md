@@ -10,24 +10,22 @@ A collection of Python automation and analysis tools for academic research.
 
 | Directory | Description |
 |-----------|-------------|
-| cnki_downloader/ | CNKI (中国知网) paper batch downloader with image recognition |
 | classification/ | Policy text statistical analysis & environmental regulation classifier |
 | file_utils/ | Batch file rename, merge, split, and text processing |
 | pdf_utils/ | PDF batch renaming tools |
 | tools/ | Auto-clicker and miscellaneous utilities |
 | models/ | Application framework demo template |
+| skills/ | Reusable Claude Code skill definitions |
 
 ## Requirements
 
-`ash
+```bash
 pip install requests selenium pyautogui opencv-python pillow pynput pandas matplotlib openpyxl
-`
+```
 
 Additional requirements:
-- **CNKI Downloader**: Edge WebDriver (download separately)
 - **Policy Analysis**: Chinese font support (SimHei recommended)
 
 ## Notes
 
-- The CNKI downloader uses screen recognition to automate paper downloads
 - All tools are for personal/academic use only
