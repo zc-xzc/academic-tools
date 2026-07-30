@@ -1,0 +1,3 @@
+interface:
+  display_name: "Claude Skill Registry"
+  short_description: "Search and install community Claude Code skills"
