@@ -201,6 +201,7 @@ python models/demo/model_demo.py
 | `nature-academic-search` | 多源文献检索、引文验证、引用文件管理 |
 | `nature-citation` | 引文格式管理（GB/T 7714、IEEE、APA 等） |
 | `nature-paper2ppt` | 论文转中文 Nature 风格 PPT |
+| `research-equipment-procurement` | 科研设备/硬件采购方法论（多厂商比价、背对背竞价、真实性验证、压价谈判、验收闭环） |
 
 ### 个人生产力类
 
