@@ -202,6 +202,7 @@ python models/demo/model_demo.py
 | `nature-citation` | 引文格式管理（GB/T 7714、IEEE、APA 等） |
 | `nature-paper2ppt` | 论文转中文 Nature 风格 PPT |
 | `research-equipment-procurement` | 科研设备/硬件采购方法论（多厂商比价、背对背竞价、真实性验证、压价谈判、验收闭环） |
+| `ecommerce-consumer-rights` | 电商购物维权方法论（发票纠纷、退款被拒、客服推诿、平台规则死循环，含维权路径与外部监管升级） |
 
 ### 个人生产力类
 
