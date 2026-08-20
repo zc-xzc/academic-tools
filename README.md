@@ -205,7 +205,7 @@ python models/demo/model_demo.py
 | `nature-citation` | 引文格式管理（GB/T 7714、IEEE、APA 等） |
 | `nature-paper2ppt` | 论文转中文 Nature 风格 PPT |
 | `research-equipment-procurement` | 科研设备/硬件采购方法论（多厂商比价、背对背竞价、真实性验证、压价谈判、验收闭环、促成话术核查、开源背书鉴别、供应商冷处理应对、实战案例） |
-| `thesis-writing-ai-prompts` | 毕业论文AI辅助写作提示词库（50个高阶指令，覆盖选题/文献综述/研究方法/结构/撰写/润色/数据分析/修改答辩/工具，含降AI率人设提示词） |
+| `thesis-writing-ai-prompts` | 毕业论文AI辅助写作提示词库（50个高阶指令，覆盖选题/文献综述/研究方法/结构/撰写/润色/数据分析/修改答辩/工具，含降AI率人设、专业硕士论文通用写作规范与审稿评审要点） |
 
 ### 个人生产力类
 
