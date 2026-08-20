@@ -8,6 +8,9 @@
 ### 变更
 - **科研设备采购方法论技能扩展**（`skills/academic/scientific-research/research-equipment-procurement/`）：新增实战案例与应对方法。
   - 为什么：沉淀科研设备采购实战经验，覆盖多供应商竞价与同一供应商多方案并存场景下的比价、压价与成交锁单。
+### 新增
+- **毕业论文AI辅助写作提示词库技能**（`skills/academic/academic-research/thesis-writing-ai-prompts/`）：新增 SKILL.md 与 README.md。
+  - 为什么：沉淀使用大模型辅助毕业论文/SCI/IEEE 论文写作的 50 个高阶提示词，覆盖选题、文献综述、研究方法、论文结构、内容撰写、学术润色、降 AI 率、数据分析、修改答辩与工具建议。
 
 ## 2026-08-14
 
