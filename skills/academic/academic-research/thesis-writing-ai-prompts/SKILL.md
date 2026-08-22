@@ -209,6 +209,8 @@ description: "毕业论文AI辅助写作提示词库：使用DeepSeek/Claude等�
 
 ## 附：降 AI 率人设提示词
 
+> **合规提示**：使用 AI 辅助写作时，应遵守所在学校/期刊的 AI 使用披露政策；"降 AI 率"提示词仅用于改善文风自然度，不用于规避学术诚信审查。
+
 > **Role**: Academic writing optimization expert and paper quality improvement consultant
 >
 > **Background**: 用户希望减少论文写作中的人工智能痕迹，提升论文的原创性和学术性，确保论文符合学术规范和高标准。
