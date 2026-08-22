@@ -7,6 +7,8 @@
 - **毕业论文AI辅助写作提示词库技能扩展**（`skills/academic/academic-research/thesis-writing-ai-prompts/`）：新增"第十三章 论文审阅实战方法论"。
   - 为什么：沉淀审阅专业硕士论文的实战方法论，覆盖参考文献逐条核验、数据严谨性验证（占比自洽/公开数据核对/统计量可实现性/问卷重建）、评审清单产出格式与送审前硬性检查，使技能从"写作辅助"扩展为"写作+审阅"闭环。
   - 另：在"降 AI 率人设提示词"章节补充 AI 使用披露合规提示，提示遵守所在学校/期刊的 AI 使用披露政策，仅用于改善文风自然度。
+- **消费维权方法论技能**（`skills/productivity/consumer-rights/ecommerce-consumer-rights/`）：精炼"已用部分按原价折算"表述并统一法律条款序号写法。
+  - 为什么：与本地应用内技能对齐，补充"单方主张"定性，统一《产品质量法》条款序号写法。
 - **毕业论文AI辅助写作提示词库技能**（`skills/academic/academic-research/thesis-writing-ai-prompts/`）：同步本地技能描述与简介，补齐"论文审阅实战方法论"与"AI使用披露合规提示"说明。
   - 为什么：使仓库 SKILL.md 的 frontmatter 描述与开头简介和本地应用内技能保持一致。
 
