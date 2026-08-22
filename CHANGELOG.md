@@ -5,6 +5,8 @@
 ## [未发布]
 - **新增视觉模型配置指南**（`docs/mcp-vision-web-bridge-guide.md`）：如何在 Claude 中配置"识图 MCP 工具"（mcp-vision-web-bridge），通过剪贴板/上传图片调用 Qwen-VL 视觉大模型。
   - 为什么：沉淀视觉桥接工具在其他电脑上的复刻与配置步骤，含 .env 模板、Claude Desktop 配置、常见问题排查与可选模型端点。
+- **新增视觉桥接完整复刻提示词**（`docs/mcp-vision-web-bridge-replica-prompt.md`）：让 Claude 在新电脑上从零生成 mcp-vision-web-bridge 项目的完整提示词。
+  - 为什么：沉淀可复用的"完整复刻提示词"，覆盖项目结构、逐文件代码、验证命令与配置步骤，配合配置指南使用。
 - **同步本地技能到云端**（8 个技能）：新增周末短途游规划技能 `skills/productivity/travel-planning/weekend-trip-planner/`；用本地完整新版覆盖 7 个旧版（`frontend-design`、`nature-paper2ppt`、`nature-academic-search`、`nature-citation`、`schedule`、`consolidate-memory`、`qinggan-loop-planner`）。
   - 为什么：本地技能缓存在 07-30 迁移后持续更新，本次将本地最新完整版同步到云端，补齐缺失的周末游技能，保持仓库与本地一致。
 - **毕业论文AI辅助写作提示词库技能扩展**（`skills/academic/academic-research/thesis-writing-ai-prompts/`）：新增"第十三章 论文审阅实战方法论"。
