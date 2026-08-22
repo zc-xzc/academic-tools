@@ -3,24 +3,33 @@ name: "consolidate-memory"
 description: "Reflective pass over your memory files — merge duplicates, fix stale facts, prune the index."
 ---
 
-# Memory Consolidation — 记忆文件整理
+# Memory Consolidation
 
-对已保存的记忆文件进行反思性整理，目标是让未来的会话能够快速了解用户背景。
+You're doing a reflective pass over what you've learned about this user and their work. The goal: a future session should be able to orient quickly — who they work with, what they're focused on, how they like things done — without re-asking.
 
-## 阶段一：盘点
+Your system prompt's auto-memory section defines the directory, file format, and memory types. Follow it.
 
-- 列出记忆目录所有文件，读取索引 `MEMORY.md`
-- 浏览每个主题文件，标记哪些重叠、过时或内容单薄
+## Phase 1 — Take stock
 
-## 阶段二：合并
+- List the memory directory and read the index (`MEMORY.md`)
+- Skim each topic file. Note which ones overlap, which look stale, which are thin.
 
-- **分离耐久与过时**：偏好、工作风格、关键关系和工作流是耐久信息——保留并强化。已过的项目、截止日期和一次性任务是过时信息——移除，或将持久教训合并到耐久文件中。
-- **合并重叠**：描述同一人、项目或偏好的文件合并为一个。
-- **修复时间引用**：将"下周"、"本季度"、"周五前"转换为绝对日期。
-- **删除易重新获取的内容**：能从日历、文档或已连接工具中直接提取的信息不必保留。
+## Phase 2 — Consolidate
 
-## 阶段三：整理索引
+**Separate the durable from the dated.** Preferences, working style, key relationships, and recurring workflows are durable — keep and sharpen them. Specific projects, deadlines, and one-off tasks are dated — if the date has passed or the work is done, retire the file or fold the lasting takeaway (e.g. "user prefers X format for launch docs") into a durable one.
 
-更新 `MEMORY.md`，保持在 200 行和 25KB 以内。每行一个条目，150 字符以内：`- [Title](file.md) — 单行说明`。
+**Merge overlaps.** If two files describe the same person, project, or preference, combine into one and keep the richer file's path.
 
-完成后输出简要总结：修改了多少文件、改变了什么。
+**Fix time references.** Convert "next week", "this quarter", "by Friday" to absolute dates so they stay readable later.
+
+**Drop what's easy to re-find.** If a memory just restates something you could pull from the user's calendar, docs, or connected tools on demand, cut it. Keep what's hard to re-derive: stated preferences, context behind a decision, who to go to for what.
+
+## Phase 3 — Tidy the index
+
+Update `MEMORY.md` so it stays under 200 lines and ~25KB. One line per entry, under ~150 chars: `- [Title](file.md) — one-line hook`.
+
+- Remove pointers to retired memories
+- Shorten any line carrying detail that belongs in the topic file
+- Add anything newly important
+
+Finish with a short summary: how many files you touched and what changed.

@@ -3,34 +3,39 @@ name: "schedule"
 description: "Create or update a scheduled task that runs automatically. Use when the user says things like \"every day\", \"each morning\", \"remind me in an hour\", \"run this at noon\", or wants to reschedule an existing task."
 ---
 
-# Schedule — 定时任务管理
+First, decide whether the user wants to **create a new** scheduled task or **change an existing** one.
 
-创建或修改自动运行的定时任务。适用于"每天早上"、"每小时"、"一小时后提醒我"等场景。
+## Updating an existing task
 
-## 更新已有任务
+If the user wants to reschedule, edit the prompt, or pause/resume a task that already exists, call the `update_scheduled_task` tool with its `taskId` — do **not** call `create_scheduled_task`. Use `list_scheduled_tasks` if you need to look up the ID. When this session is itself a scheduled run, the current task's ID is the `name` attribute in the `<scheduled-task name="…">` tag at the top of the conversation.
 
-如果要修改、暂停/恢复或重新调度已有任务，使用 `update_scheduled_task`。先用 `list_scheduled_tasks` 查找 taskId。
+## Creating a new task
 
-## 创建新任务
+You are distilling the current session into a reusable shortcut. Follow these steps:
 
-### 1. 分析会话
+### 1. Analyze the session
 
-提取用户想要定时执行的核心任务，提炼为可重复的目标。
+Review the session history to identify the core task the user performed or requested. Distill it into a single, repeatable objective.
 
-### 2. 编写 Prompt
+### 2. Draft a prompt
 
-未来的自动运行不会访问当前对话，Prompt 必须完全自包含：
-- 清晰的目标描述
-- 具体执行步骤
-- 相关文件路径、URL、工具名
-- 预期输出或验收标准
-- 用户表达的偏好或约束
+The prompt will be used for future autonomous runs — it must be entirely self-contained. Future runs will NOT have access to this session, so never reference "the current conversation," "the above," or any ephemeral context.
 
-### 3. 确定调度方式
+Include in the description:
+- A clear objective statement (what to accomplish)
+- Specific steps to execute
+- Any relevant file paths, URLs, repositories, or tool names
+- Expected output or success criteria
+- Any constraints or preferences the user expressed
 
-- **cronExpression**：周期性任务。在用户本地时区计算。
-  - `0 9 * * *` — 每天 9:00
-  - `0 9 * * 1-5` — 工作日 9:00
-  - `30 8 * * 1` — 每周一 8:30
-- **fireAt**：一次性任务。ISO 8601 时间戳含时区偏移。
-- **两者均省略**：手动触发（ad-hoc）
+Write the description in second-person imperative ("Check the inbox…", "Run the test suite…"). Keep it concise but complete enough that another Claude session could execute it cold.
+
+### 3. Choose a taskName
+
+Pick a short, descriptive name in kebab-case (e.g. "daily-inbox-summary", "weekly-dep-audit", "format-pr-description").
+
+### 4. Determine scheduling
+
+The `create_scheduled_task` tool description explains the options (`cronExpression` for recurring, `fireAt` for one-time, omit both for ad-hoc) and their formats. If the user didn't give a clear schedule, propose one and ask them to confirm before proceeding — don't rely on an approval prompt to catch a wrong guess, since task creation may be approved automatically in some permission modes.
+
+Finally, call the `create_scheduled_task` tool.
