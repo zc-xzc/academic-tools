@@ -16,8 +16,7 @@ academic-tools/
 ├── models/                  # 应用框架示例
 ├── tools/                   # 实用小工具（自动点击 / 文档分割 / 视频抽帧）
 ├── skills/                  # Claude 技能定义（唯一归宿）
-├── reviews/                 # 复盘日志（daily 每日轻复盘 / weekly 每周汇总）
-├── docs/                    # 流程文档（复盘与技能更新工作流）
+├── docs/                    # 流程文档
 ├── CHANGELOG.md             # 技能与结构变更记录
 ├── README.md
 ├── LICENSE                 (MIT)
@@ -219,20 +218,6 @@ python models/demo/model_demo.py
 | `interpersonal-boundary-guide` | 人际边界思考指南 |
 | `macos-cleanup` | macOS 软件缓存与残留清理（面向本机智能体） |
 | `ecommerce-consumer-rights` | 电商购物维权方法论（发票纠纷、退款被拒、客服推诿、平台规则死循环、硬件/设备质量缺陷退货，含维权路径、厂商拖延话术识别、举证责任反转、开源硬件拒退话术破解与外部监管升级） |
-
----
-
-## 七、复盘与技能更新机制（reviews/）
-
-本仓库同时作为 Claude 技能的**唯一归宿**，并承载"每日轻复盘 + 周汇总"的更新机制：
-
-- **每日**（手动触发"今日复盘"）→ 生成 `reviews/daily/YYYY-MM-DD.md`（模板见 `reviews/daily/_TEMPLATE.md`），记录：今日主题 / 沉淀的可复用知识 / 技能变更建议 / 遗留问题。
-- **每周日** → 聚合本周 daily 到 `reviews/weekly/YYYY-Www.md`，产出**技能变更提案**；用户确认后按 `main 拉分支 → 上传 → 提交 → PR` 更新 `skills/` 与 `CHANGELOG.md`。
-- 复盘只是触发器，技能改动经确认后才落盘，保证可回滚。
-
-详细流程见 [docs/review-workflow.md](docs/review-workflow.md)。
-
----
 
 ## 依赖汇总
 
