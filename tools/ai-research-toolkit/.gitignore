@@ -1,0 +1,15 @@
+# 敏感文件
+*.key
+*.pem
+.env
+*.secret
+
+# 本地缓存
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+
+# 临时文件
+*.tmp
+*.log
