@@ -4,6 +4,11 @@
 
 ## [未发布]
 
+## 2026-08-22
+### 更新
+- **消费维权方法论技能扩展**（`skills/productivity/consumer-rights/ecommerce-consumer-rights/`）：新增"线下预付卡/次卡退费"场景（场景F），并将定位从电商购物扩展为线上线下消费维权。
+  - 为什么：沉淀线下实体店办卡充值后的退费实战经验，覆盖已用部分"按原价折算"与"收手续费"两类格式条款的算账方法、拒绝话术、门店→公司→12315/商务局升级路径，以及微信文字留证纪律。
+
 ## 2026-08-20
 ### 变更
 - **科研设备采购方法论技能扩展**（`skills/academic/scientific-research/research-equipment-procurement/`）：新增实战案例与应对方法。
