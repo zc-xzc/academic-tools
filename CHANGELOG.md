@@ -3,6 +3,8 @@
 技能与仓库结构的变更记录，遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。每次变更一个条目：日期 / 改了什么 / 为什么。
 
 ## [未发布]
+- **人际交往边界指南：移除版权归属中的个人信息**（`skills/productivity/relationships-and-communication/interpersonal-boundary-guide/README.md`）：将迁移说明中的版权归属改为中性表述。
+  - 为什么：公开仓库零隐私红线，避免在 README 中保留个人姓名。
 - **新增视觉模型配置指南**（`docs/mcp-vision-web-bridge-guide.md`）：如何在 Claude 中配置"识图 MCP 工具"（mcp-vision-web-bridge），通过剪贴板/上传图片调用 Qwen-VL 视觉大模型。
   - 为什么：沉淀视觉桥接工具在其他电脑上的复刻与配置步骤，含 .env 模板、Claude Desktop 配置、常见问题排查与可选模型端点。
 - **新增视觉桥接完整复刻提示词**（`docs/mcp-vision-web-bridge-replica-prompt.md`）：让 Claude 在新电脑上从零生成 mcp-vision-web-bridge 项目的完整提示词。
