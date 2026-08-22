@@ -33,4 +33,4 @@
 
 ## 迁移说明与许可
 
-本提示词于 2026-07-21 从 `zc-xzc/interpersonal-boundary-guide` 迁入本仓库，并按当前分类规范维护。其版权归 Zicheng Xu；适用本仓库根目录的 [MIT License](../../../LICENSE)。
+本提示词于 2026-07-21 从 `zc-xzc/interpersonal-boundary-guide` 迁入本仓库，并按当前分类规范维护。其版权归本仓库作者；适用本仓库根目录的 [MIT License](../../../LICENSE)。
