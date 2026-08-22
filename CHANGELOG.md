@@ -3,6 +3,9 @@
 技能与仓库结构的变更记录，遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。每次变更一个条目：日期 / 改了什么 / 为什么。
 
 ## [未发布]
+- **新增大文档高效处理方法论指南**（`docs/large-document-processing-guide.md`）：沉淀面向超大文本（几十万~几百万字论文/说明书/数据库）的 AI 高效处理架构——先导航后阅读、混合 RAG（BM25+向量+Reranker）、语义分块、结构化沉淀（读一次后入库复用）、分层摘要、阅读预算、Document Retrieval MCP。
+  - 为什么：避免每次把大文档全文喂给 AI 造成 token 浪费，建立"Parse once → Index once → Retrieve many → Read only what is needed → Extract once → Reuse structured results"的可复用方法论，服务于地榆化合物数据库等科研任务。
+
 - **移除复盘机制**（删除 `reviews/` 目录、`docs/review-workflow.md`，更新 `README.md` 目录树与章节）：删除每日轻复盘与周汇总机制及配套文档。
   - 为什么：复盘内容为个人工作记录，含账号等内部信息，不宜保留在公开仓库；技能更新流程仍按既定 `main 拉分支 → 上传 → 提交 → PR` 执行，不受影响。
 - **人际交往边界指南：移除版权归属中的个人信息**（`skills/productivity/relationships-and-communication/interpersonal-boundary-guide/README.md`）：将迁移说明中的版权归属改为中性表述。
