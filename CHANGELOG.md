@@ -3,6 +3,10 @@
 技能与仓库结构的变更记录，遵循 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)。每次变更一个条目：日期 / 改了什么 / 为什么。
 
 ## [未发布]
+
+- **新增课题组申请与面试通用规范技能**（`skills/academic/scientific-research/research-group-application-interview/`）：新增 SKILL.md 与 README.md，沉淀课题组申请与面试的通用方法论，形成“调研 → 材料 → 面试 → 复盘 → 跟进 → 试做”闭环，含课题组五层调研、代表论文阅读模板、PPT 结构规范、项目六句式、追问应答、复盘分级、跟进邮件模板、试做任务边界确认表与长期改进路线。
+  - 为什么：把面向研究生/博士/科研助理/访问学生的课题组申请与面试经验沉淀为可复用技能；内容为通用匿名版，不含任何具体课题组、人员、机构与产品信息。
+
 - **新增大文档高效处理方法论指南**（`docs/large-document-processing-guide.md`）：沉淀面向超大文本（几十万~几百万字论文/说明书/数据库）的 AI 高效处理架构——先导航后阅读、混合 RAG（BM25+向量+Reranker）、语义分块、结构化沉淀（读一次后入库复用）、分层摘要、阅读预算、Document Retrieval MCP。
   - 为什么：避免每次把大文档全文喂给 AI 造成 token 浪费，建立"Parse once → Index once → Retrieve many → Read only what is needed → Extract once → Reuse structured results"的可复用方法论，服务于地榆化合物数据库等科研任务。
 
